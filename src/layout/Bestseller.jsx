@@ -1,13 +1,14 @@
-import React from 'react'
+
 import ProductCard from '../components/ProductCard'
-import product from "../assets/image/product.png"
+import { product } from "@images"
 
 function Bestseller() {
     // Ürün verilerini bir diziye alarak kod kalabalığını önleyelim
     const products = Array(8).fill({
         name: "Graphics Design",
         desc: "English Department",
-        price: "16.48$",
+        oldPrice: "16.48",
+        price: "6.48$",
         image: product
     });
 
@@ -38,10 +39,9 @@ function Bestseller() {
                         key={index}
                         name={item.name}
                         desc={item.desc}
+                        oldPrice={item.oldPrice}
                         price={item.price}
                         image={item.image}
-                        // ÖNEMLİ: w-[238px] sildik, w-full yaptık. 
-                        // Kart artık içinde bulunduğu grid hücresine göre otomatik küçülür.
                         className="w-full h-auto"
                     />
                 ))}

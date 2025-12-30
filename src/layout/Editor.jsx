@@ -1,9 +1,7 @@
 
 import React from 'react';
-import men from "../assets/image/men.png";
-import women from "../assets/image/women.png";
-import accessories from "../assets/image/accessories.png";
-import kids from "../assets/image/kids.png";
+
+import { kids, women, accessories, men } from "@images"
 
 function Editor() {
     return (

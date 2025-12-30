@@ -35,7 +35,9 @@ export default {
       blu: "#23A6F0",
       light: "#FFFFFF",
       success: "#2DC071",
-      gray: "#FAFAFA"
+      gray: "#FAFAFA",
+      alert: "#E77C40",
+      green: "#23856D"
     },
   },
 

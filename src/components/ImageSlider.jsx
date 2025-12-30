@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-export default function ImageSlider({ h5, h1, h4, button, price, image }) {
+export default function ImageSlider({ h5, h1, h4, button, price, image, buttonLink }) {
     const [current, setCurrent] = useState(0);
 
     const prevSlide = () => {
@@ -51,9 +52,13 @@ export default function ImageSlider({ h5, h1, h4, button, price, image }) {
                                         {price}
                                     </h3>
 
-                                    <button className="flex h-[62px] w-[221px] items-center justify-center bg-success text-h3 text-light">
-                                        {button}
-                                    </button>
+                                    <Link to={buttonLink} >
+                                        <button className="flex h-[62px] w-[221px] items-center justify-center bg-success text-h3 text-light">
+                                            {button}
+                                        </button>
+                                    </Link>
+
+
                                 </div>
                             </div>
                         </div>

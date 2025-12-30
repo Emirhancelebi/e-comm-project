@@ -1,4 +1,4 @@
-import fluid from "../assets/image/fluid.png";
+import { fluid } from "@images";
 
 function Fluid() {
     return (

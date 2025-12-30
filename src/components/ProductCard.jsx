@@ -1,4 +1,5 @@
-function ProductCard({ image, name, desc, price, className = "" }) {
+
+function ProductCard({ image, name, desc, price, oldPrice, className = "" }) {
     return (
         <div className={`flex flex-col gap-4 text-center ${className}`}>
 
@@ -22,9 +23,23 @@ function ProductCard({ image, name, desc, price, className = "" }) {
             </p>
 
             {/* Price */}
-            <span className="text-h5 text-primary ">
-                {price}
-            </span>
+            <div className=" flex flex-row gap-1 py-1 px-1 justify-evenly">
+                <div
+                    className="text-h5 text-secondary  ">{oldPrice}</div>
+                <span
+                    className="text-h5 text-green">
+                    {price}
+                </span >
+
+            </div>
+            <div className=" flex flex-row justify-evenly">
+                <span className="bg-blu">0</span>
+                <span className="bg-green">0</span>
+                <span className="bg-alert">0</span>
+                <span className="bg-primary">0</span>
+
+
+            </div>
 
         </div>
     );

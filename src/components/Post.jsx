@@ -1,5 +1,5 @@
 import React from 'react'
-import post from "../assets/image/post.png"
+import { post } from "@images"
 
 function Post({ tags, title, descrip, date, comment }) {
     return (

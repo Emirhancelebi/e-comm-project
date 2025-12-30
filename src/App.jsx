@@ -1,17 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from "./layout/Header.jsx"
-import PageContent from './layout/PageContent.jsx'
+
+import PageContent from "./layout/PageContent.jsx";
+import ShopPage from "./pages/ShopPage.jsx";
+
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
-
   return (
-    <>
-      <PageContent />
-    </>
-  )
+    <Router>
+
+
+      <Switch>
+        <Route exact path="/" component={PageContent} />
+        <Route path="/shop" component={ShopPage} />
+      </Switch>
+    </Router>
+  );
 }
 
-export default App
+export default App;
