@@ -21,6 +21,8 @@ import shopima1 from "./shopima1.jpg"
 import shopima2 from "./shopima2.jpg"
 import shopima3 from "./shopima3.png"
 import shopima4 from "./shopima4.jpg"
+import star from "./star.png"
+import starhalf from "./starhalf.png"
 
 
 export {
@@ -31,7 +33,7 @@ export {
     sapka,
     reddit,
     stripe,
-    kids, men, post, slide1, slide2, women, accessories, fluid, shopima, shopima1, shopima2, shopima3, shopima4,
+    kids, men, post, slide1, slide2, women, accessories, fluid, shopima, shopima1, shopima2, shopima3, shopima4, star, starhalf
 };
 
 
