@@ -28,13 +28,13 @@ function Footer() {
     ];
 
     return (
-        <footer className="bg-muted">
-            {/* Top */}
+        <footer className="container">
+
             <div className="container py-10">
-                <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-                    <Link to="/" className="text-h3 font-bold text-foreground">
+                <div className="flex flex-col  sm:flex-row items-center justify-between gap-6">
+                    <h3 to="/" className="text-h3 font-bold  ">
                         Bandage
-                    </Link>
+                    </h3>
 
                     <div className="flex gap-4 mt-4 sm:mt-0 text-accent">
                         <Facebook
@@ -55,10 +55,9 @@ function Footer() {
 
             <hr className="border-border" />
 
-            {/* Links */}
-            <div className="container py-12">
+            <div className="container flex justify-between py-12">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-                    {/* Link columns */}
+
                     {footerLinks.map((column) => (
                         <div key={column.title} className="flex flex-col gap-4">
                             <h5 className="text-h5 text-foreground">{column.title}</h5>
@@ -75,17 +74,17 @@ function Footer() {
                         </div>
                     ))}
 
-                    {/* Subscribe */}
-                    <div className="flex flex-col gap-4 sm:col-span-2 lg:col-span-1">
+
+                    <div className="flex flex-col gap-4 sm:col-span-2 lg:col-span-1 ">
                         <h5 className="text-h5 text-foreground">Get In Touch</h5>
 
-                        <div className="flex flex-row ">
+                        <div className="flex flex-row w-[321px] h-[58px]">
                             <input
                                 type="email"
                                 placeholder="Your Email"
-                                className="h-14 flex-1 min-w-0 rounded-md sm:rounded-r-none border border-border bg-background px-4 text-p focus:outline-none focus:ring-2 focus:ring-accent"
+                                className="flex rounded-l sm:rounded-r-none border border-border px-4 text-p "
                             />
-                            <button className="bg-blu text-light">Subscribe</button>
+                            <button className="bg-blu text-light rounded-r w-[117px]">Subscribe</button>
 
                         </div>
 
@@ -98,7 +97,7 @@ function Footer() {
 
             <hr className="border-border" />
 
-            {/* Bottom */}
+
             <div className="container py-6">
                 <p className="text-h6  text-center sm:text-left">
                     Made With Love By Emirhan. All Rights Reserved.

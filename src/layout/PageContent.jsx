@@ -16,7 +16,7 @@ function PageContent() {
     return (
         <div >
 
-            <Header></Header>
+            <Header bg={"bg-primary"}></Header>
             <ImageSlider h5={"SUMMER 2020"} h1={"NEW COLLECTİON"} h4={"We know how large objects will act, but things on a small scale."} button={"Shop Now"} image={[slide1, slide1]} buttonLink={"/shop"}></ImageSlider>
             <Editor></Editor>
             <Bestseller></Bestseller>

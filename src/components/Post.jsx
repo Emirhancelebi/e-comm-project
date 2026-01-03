@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { post } from "@images"
 
 function Post({ tags, title, descrip, date, comment }) {

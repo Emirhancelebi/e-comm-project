@@ -1,4 +1,5 @@
 
+import ProductDetails from "./components/ProductDetails.jsx";
 import PageContent from "./layout/PageContent.jsx";
 import ShopPage from "./pages/ShopPage.jsx";
 
@@ -12,6 +13,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={PageContent} />
         <Route path="/shop" component={ShopPage} />
+        <Route path="/shopdetail" component={ProductDetails} />
       </Switch>
     </Router>
   );

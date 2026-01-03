@@ -3,7 +3,7 @@ function ProductCard({ image, name, desc, price, oldPrice, className = "" }) {
     return (
         <div className={`flex flex-col gap-4 text-center ${className}`}>
 
-            {/* Image */}
+            {/* img */}
             <div className="w-full overflow-hidden">
                 <img
                     src={image}
@@ -12,12 +12,12 @@ function ProductCard({ image, name, desc, price, oldPrice, className = "" }) {
                 />
             </div>
 
-            {/* Title */}
+            {/* name */}
             <h5 className="text-h5 text-primary">
                 {name}
             </h5>
 
-            {/* Description */}
+            {/* desc*/}
             <p className="text-p text-secondary">
                 {desc}
             </p>

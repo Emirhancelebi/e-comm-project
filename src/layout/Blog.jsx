@@ -13,7 +13,6 @@ function Blog() {
     return (
         <section className=" container flex flex-col gap-12 md:gap-16 py-16 md:py-20">
 
-            {/* Header */}
             <div className="flex flex-col items-center gap-4 text-center">
                 <h4 className="text-h4 text-primary">
                     Practice Advice
@@ -29,7 +28,7 @@ function Blog() {
                 </p>
             </div>
 
-            {/* Posts */}
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {posts.map((post, index) => (
                     <Post key={index} {...post} />

@@ -14,15 +14,15 @@ import {
     Menu,
 } from "lucide-react";
 
-function Header() {
+function Header({ bg, }) {
     const [shopOpen, setShopOpen] = useState(false);
     const [mobileOpen, setMobileOpen] = useState(false);
 
     return (
         <div className="  font-main">
 
-            {/* TOP BAR */}
-            <div className="hidden md:flex items-center justify-between bg-primary px-6 py-3 text-smal text-light">
+
+            <div className={`hidden md:flex items-center justify-between px-6 py-3 text-smal text-light ${bg}`}>
                 <div className="flex items-center gap-6">
                     <div className="flex items-center gap-2">
                         <Phone size={14} />
@@ -47,22 +47,20 @@ function Header() {
                 </div>
             </div>
 
-            {/* MAIN HEADER */}
             <header className="px-4 py-4 lg:px-10">
                 <div className="flex items-center justify-between">
 
-                    {/* LOGO */}
+
                     <h3 className="text-h3 text-primary">
                         Bandage
                     </h3>
 
-                    {/* DESKTOP NAV */}
                     <nav className="hidden lg:flex">
                         <ul className="flex items-center gap-4  text-secondary ">
 
                             <li><Link to="/">Home</Link></li>
 
-                            {/* SHOP */}
+
                             <li
                                 className="relative cursor-pointer"
                                 onClick={() => setShopOpen(prev => !prev)}
@@ -77,10 +75,10 @@ function Header() {
                                                     {title}
                                                 </h5>
                                                 <ul className="flex flex-col gap-1 text-p text-secondary">
-                                                    <li><Link to="/">Bags</Link></li>
-                                                    <li><Link to="/">Belts</Link></li>
-                                                    <li><Link to="/">Cosmetics</Link></li>
-                                                    <li><Link to="/">Hats</Link></li>
+                                                    <li><Link to="/shop">Bags</Link></li>
+                                                    <li><Link to="/shop">Belts</Link></li>
+                                                    <li><Link to="/shop">Cosmetics</Link></li>
+                                                    <li><Link to="/shop">Hats</Link></li>
                                                 </ul>
                                             </div>
                                         ))}
@@ -95,7 +93,7 @@ function Header() {
                         </ul>
                     </nav>
 
-                    {/* RIGHT ACTIONS */}
+
                     <div className="flex items-center gap-4 text-primary lg:text-blu">
                         <User size={18} />
                         <span className="hidden lg:inline text-p">
@@ -105,7 +103,7 @@ function Header() {
                         <ShoppingCart size={20} />
                         <Heart size={20} />
 
-                        {/* MOBILE MENU ICON */}
+
                         <Menu
                             size={26}
                             className="lg:hidden cursor-pointer"
@@ -114,7 +112,7 @@ function Header() {
                     </div>
                 </div>
 
-                {/* MOBILE MENU */}
+
                 {mobileOpen && (
                     <nav className="mt-6 lg:hidden">
                         <ul className="flex flex-col items-center gap-4 text-h5 text-secondary text-h6">

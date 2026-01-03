@@ -4,7 +4,7 @@ function Fluid() {
     return (
         <section className="container mx-auto flex max-w-7xl flex-col-reverse items-center gap-12 py-20 px-4 md:flex-row">
 
-            {/* Image */}
+
             <div className="flex-1">
                 <img
                     src={fluid}
@@ -13,7 +13,7 @@ function Fluid() {
                 />
             </div>
 
-            {/* Content */}
+
             <div className="flex flex-1 flex-col gap-6 text-center md:text-left">
                 <h5 className="text-h5 text-secondary">
                     SUMMER 2020
@@ -27,7 +27,6 @@ function Fluid() {
                     We know how large objects will act, but things on a small scale.
                 </p>
 
-                {/* Actions */}
                 <div className="flex flex-col lg:flex-row lg:justify-start lg:items-start gap-2.5">
                     <button className="flex h-[52px] w-[160px] items-center justify-center bg-blu text-btn text-light lg:bg-success  lg:text-center">
                         Shop Now

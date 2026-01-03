@@ -1,3 +1,4 @@
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -19,7 +20,7 @@ export default function ImageSlider({ h5, h1, h4, button, price, image, buttonLi
 
     return (
         <div className=" relative h-screen w-full overflow-hidden">
-            {/* Slides */}
+            {/* Slide */}
             <div
                 className="flex h-full transition-transform duration-700 ease-in-out"
                 style={{ transform: `translateX(-${current * 100}%)` }}
@@ -32,7 +33,7 @@ export default function ImageSlider({ h5, h1, h4, button, price, image, buttonLi
                             className="h-full w-full object-cover"
                         />
 
-                        {/* Content */}
+                        {/* Bilgi */}
                         <div className="absolute inset-0 flex items-center">
                             <div className="mx-auto flex w-full max-w-5xl flex-col gap-6 px-4 text-center lg:text-left">
                                 <h5 className="text-h6li text-light">
@@ -66,22 +67,21 @@ export default function ImageSlider({ h5, h1, h4, button, price, image, buttonLi
                 ))}
             </div>
 
-            {/* Controls */}
+            {/* Kontrol */}
             <button
                 onClick={prevSlide}
-                className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-primary/50 p-2 text-light"
+                className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full  p-2 text-light"
             >
-                ‹
+                <ChevronLeft />
             </button>
 
             <button
                 onClick={nextSlide}
-                className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-primary/50 p-2 text-light"
+                className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full  p-2 text-light"
             >
-                ›
+                <ChevronRight />
             </button>
 
-            {/* Indicators */}
             <div className="absolute bottom-8 left-1/2 flex -translate-x-1/2 gap-2">
                 {image.map((_, index) => (
                     <button
