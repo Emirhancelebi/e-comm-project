@@ -1,37 +1,18 @@
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Redo, Twitter } from "lucide-react"
-import { Link } from "react-router-dom"
+
 import { contact } from "@images"
 import Footer from "../layout/Footer"
 
+import InnerHeader from "../components/InnerHeader";
+
 
 function ContactPage() {
+
     return (
         <div>
-            <div className="container flex items-center justify-between py-8 ">
-                <h3 className="text-h3 text-primary">
-                    Bandage
-                </h3>
-                <nav className="hidden lg:flex">
-                    <ul className="flex items-center gap-5  text-secondary ">
+            <InnerHeader />
 
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">Product</Link></li>
-                        <li><Link to="/blog">Pricing</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
-
-                    </ul>
-                </nav>
-                <div className="flex items-center gap-4 text-primary">
-
-                    <span className=" lg:inline text-p text-blu">
-                        Login
-                    </span>
-
-                    <button className="rounded text-btn bg-blu text-light ">Become a remember -</button>
-
-                </div>
-            </div>
-            <section className="container flex flex-col  lg:flex-row py-28 gap-20">
+            <section className="container flex flex-col text-center py-28 gap-20   lg:flex-row lg:text-left ">
                 <div className="">
                     <h5 className="text-h5 text-primary gap-9">CONTACT US</h5><br />
                     <h1 className="text-h1 text-primary gap-9">Get in touch
@@ -40,7 +21,7 @@ function ContactPage() {
                         but things on a small scale</h4><br />
                     <h3 className="text-h3 text-primary gap-9">Phone ; +451 215 215 </h3><br />
                     <h3 className="text-h3 text-primary gap-9">Fax : +451 215 215</h3><br />
-                    <div className="flex flex-row gap-8 p-3">
+                    <div className="flex justify-center flex-row gap-8 p-3 lg:justify-normal">
                         <Twitter />
                         <Facebook />
                         <Instagram />
